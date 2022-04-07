@@ -1,19 +1,5 @@
 
 //========== For time in header ==========//
-/*
-    Timer 1
-var update = function () {
-    date = moment(new Date())
-    datetime.html(date.format('dddd, MMMM Do YYYY, h:mm:ss a'));
-};
-
-$(document).ready(function(){
-    datetime = $('#currentDay')
-    update();
-    setInterval(update, 1000);
-});*/
-
-// Timer 2
 var currentHour = moment().hours();
 var time = moment().format('dddd, MMMM Do YYYY, h:mm:ss a');
 $("#currentDay").text(time);
@@ -37,7 +23,8 @@ $(document).ready(function(){
     // Function that listens to saveBtn clicks
     $('.saveBtn').on('click', function() {
         var time = $(this).parent().attr("id");
-        var value = $(this).sibling(".information").val();
+        var value = $(this).siblings(".information").val();
+console.log(value);
         localStorage.setItem(time, value)
     })
 
@@ -57,65 +44,65 @@ $(document).ready(function(){
             $("#hour-nine").addClass("future");
 
         } 
-        if (currentHour > 9) {
+        if (currentHour > 10) {
             $("#hour-ten").addClass("past");
-        } else if (currentHour >= 9 && currentHour <10) {
+        } else if (currentHour >= 10 && currentHour <11) {
             $("#hour-ten").addClass("present");
         } else {
             $("#hour-ten").addClass("future");
 
         }
-        if (currentHour > 9) {
+        if (currentHour > 11) {
             $("#hour-eleven").addClass("past");
-        } else if (currentHour >= 9 && currentHour <10) {
+        } else if (currentHour >= 11 && currentHour <12) {
             $("#hour-eleven").addClass("present");
         } else {
             $("#hour-eleven").addClass("future");
 
         }
-        if (currentHour > 9) {
+        if (currentHour > 12) {
             $("#hour-twelve").addClass("past");
-        } else if (currentHour >= 9 && currentHour <10) {
+        } else if (currentHour >= 12 && currentHour <1) {
             $("#hour-twelve").addClass("present");
         } else {
             $("#hour-twelve").addClass("future");
 
         }
-        if (currentHour > 9) {
+        if (currentHour > 1) {
             $("#hour-one").addClass("past");
-        } else if (currentHour >= 9 && currentHour <10) {
+        } else if (currentHour >= 1 && currentHour <2) {
             $("#hour-one").addClass("present");
         } else {
             $("#hour-one").addClass("future");
 
         }
-        if (currentHour > 9) {
+        if (currentHour > 2) {
             $("#hour-two").addClass("past");
-        } else if (currentHour >= 9 && currentHour <10) {
+        } else if (currentHour >= 2 && currentHour <3) {
             $("#hour-two").addClass("present");
         } else {
             $("#hour-two").addClass("future");
 
         }
-        if (currentHour > 9) {
+        if (currentHour > 3) {
             $("#hour-three").addClass("past");
-        } else if (currentHour >= 9 && currentHour <10) {
+        } else if (currentHour >= 4 && currentHour <5) {
             $("#hour-three").addClass("present");
         } else {
             $("#hour-three").addClass("future");
 
         }
-        if (currentHour > 9) {
+        if (currentHour > 4) {
             $("#hour-four").addClass("past");
-        } else if (currentHour >= 9 && currentHour <10) {
+        } else if (currentHour >= 4 && currentHour <5) {
             $("#hour-four").addClass("present");
         } else {
             $("#hour-four").addClass("future");
 
         }
-        if (currentHour > 9) {
+        if (currentHour > 5) {
             $("#hour-five").addClass("past");
-        } else if (currentHour >= 9 && currentHour <10) {
+        } else if (currentHour >= 5 && currentHour <6) {
             $("#hour-five").addClass("present");
         } else {
             $("#hour-five").addClass("future");
