@@ -6,9 +6,8 @@ Many of us have very busy work days. This work day scheduler is built on functio
 
 
 Screenshot 1:
-
+![img1](./Assests/WDS.png)
 Screenshot 2:
-
+![img2](./Assests/wds2.png)
 Screenshot 3:
-
-Screenshot 4:
+![img3](./Assests/wds3.png)

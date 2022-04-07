@@ -62,47 +62,47 @@ console.log(value);
         }
         if (currentHour > 12) {
             $("#hour-twelve").addClass("past");
-        } else if (currentHour >= 12 && currentHour <1) {
+        } else if (currentHour >= 12 && currentHour <13) {
             $("#hour-twelve").addClass("present");
         } else {
             $("#hour-twelve").addClass("future");
 
         }
-        if (currentHour > 1) {
+        if (currentHour > 13) {
             $("#hour-one").addClass("past");
-        } else if (currentHour >= 1 && currentHour <2) {
+        } else if (currentHour >= 13 && currentHour <14) {
             $("#hour-one").addClass("present");
         } else {
             $("#hour-one").addClass("future");
 
         }
-        if (currentHour > 2) {
+        if (currentHour > 14) {
             $("#hour-two").addClass("past");
-        } else if (currentHour >= 2 && currentHour <3) {
+        } else if (currentHour >= 14 && currentHour <15) {
             $("#hour-two").addClass("present");
         } else {
             $("#hour-two").addClass("future");
 
         }
-        if (currentHour > 3) {
+        if (currentHour > 15) {
             $("#hour-three").addClass("past");
-        } else if (currentHour >= 4 && currentHour <5) {
+        } else if (currentHour >= 15 && currentHour <16) {
             $("#hour-three").addClass("present");
         } else {
             $("#hour-three").addClass("future");
 
         }
-        if (currentHour > 4) {
+        if (currentHour > 16) {
             $("#hour-four").addClass("past");
-        } else if (currentHour >= 4 && currentHour <5) {
+        } else if (currentHour >= 16 && currentHour <17) {
             $("#hour-four").addClass("present");
         } else {
             $("#hour-four").addClass("future");
 
         }
-        if (currentHour > 5) {
+        if (currentHour > 17) {
             $("#hour-five").addClass("past");
-        } else if (currentHour >= 5 && currentHour <6) {
+        } else if (currentHour >= 17 && currentHour <18) {
             $("#hour-five").addClass("present");
         } else {
             $("#hour-five").addClass("future");
